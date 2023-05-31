@@ -1,0 +1,149 @@
+body{
+    color: white;
+    font-family: 'Arimo', sans-serif;;
+    text-align: left;
+    margin-left: 80px;
+    background-image: url(imagens/dark-green-palm-leaves.jpg);
+    background-size: cover
+}
+
+h1{
+    font-size: 100px;
+    padding-top: 250px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.slideshow-container {
+  float: right;
+  bottom: 175;
+  left: 50%;
+  margin-right: 85;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+}
+
+.mySlides {
+  display: none;
+  text-align: right;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 0px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 45px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ul{
+    list-style: none;
+    margin-top: 50px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+li{
+    display: inline;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+ul li a:hover{
+    opacity:0.7;
+}
+
+.segundo-paragrafo{
+    margin-bottom: 60px;
+}
+
+.botao{
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px 15px;
+    color: white;
+}
+
+.botao:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+    body {
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 50px;
+        padding-top: 0px;
+    }
+    ul li a{
+        font-size: 35px;
+    }
+}
+/*
+tlm: 640px
+tablet: 768px
+laptop: 1024px
+desktop: 1280px
+xl desktop: 1536px
+*/
